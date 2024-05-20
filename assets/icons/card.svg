@@ -1,0 +1,16 @@
+<svg width="315" height="170" viewBox="0 0 315 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="315" height="170" rx="20" fill="#35AAFF"/>
+<mask id="mask0_32_20896" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="315" height="170">
+<rect width="315" height="170" rx="20" fill="#54C2E5"/>
+</mask>
+<g mask="url(#mask0_32_20896)">
+<rect x="250" y="76.7506" width="71.7721" height="71.7721" transform="rotate(-45 250 76.7506)" fill="white" fill-opacity="0.15"/>
+<rect x="206" y="76.3752" width="91.0404" height="91.0404" transform="rotate(-45 206 76.3752)" fill="white" fill-opacity="0.15"/>
+<rect x="151" y="72.1876" width="106.331" height="106.331" transform="rotate(-45 151 72.1876)" fill="white" fill-opacity="0.15"/>
+<rect x="80" y="80.9061" width="125.732" height="125.732" transform="rotate(-45 80 80.9061)" fill="white" fill-opacity="0.15"/>
+<circle cx="64" cy="162" r="9" fill="#E80B26"/>
+<circle cx="76" cy="162" r="9" fill="#F59D31"/>
+<path d="M70 168.708C71.8413 167.06 73 164.666 73 162C73 159.334 71.8413 156.94 70 155.292C68.1587 156.94 67 159.334 67 162C67 164.666 68.1587 167.06 70 168.708Z" fill="#FC6020"/>
+</g>
+<path d="M0 107H315V150C315 161.046 306.046 170 295 170H20C8.9543 170 0 161.046 0 150V107Z" fill="#007CD7"/>
+</svg>
