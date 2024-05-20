@@ -44,6 +44,7 @@ class _SettingsPageState extends State<SettingsPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ListTile(
+                onTap: () {},
                 leading: Image.asset("assets/icons/person.png"),
                 title: Text(
                   "Miles Morales",

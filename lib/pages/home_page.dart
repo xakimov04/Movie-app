@@ -115,7 +115,7 @@ class _HomePageState extends State<HomePage> {
                   title: i["title"],
                   subtitle: i["subtitle"],
                   star: i["star"],
-                  location: i["location"]),
+                  location: i["location"],),
             )
         ],
       ),
@@ -156,12 +156,15 @@ class _HomePageState extends State<HomePage> {
       actions: [
         Padding(
           padding: const EdgeInsets.all(18.0),
-          child: Container(
-            clipBehavior: Clip.hardEdge,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
+          child: InkWell(
+            onTap: (){},
+            child: Container(
+              clipBehavior: Clip.hardEdge,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: Image.asset("assets/icons/person.png"),
             ),
-            child: Image.asset("assets/icons/person.png"),
           ),
         )
       ],

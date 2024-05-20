@@ -131,11 +131,13 @@ class _TicketPageState extends State<TicketPage> {
                           ),
                           child: InkWell(
                             onTap: () {
-                              Navigator.pushReplacement(
+                              Navigator.pushAndRemoveUntil(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => const NavigationWidget(),
+                                  builder: (context) =>
+                                      const NavigationWidget(),
                                 ),
+                                (Route<dynamic> route) => false,
                               );
                             },
                             child: Container(

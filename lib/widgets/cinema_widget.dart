@@ -21,67 +21,70 @@ class CinemaWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: height * 0.121,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 5, bottom: 5, right: 5),
-                child: Image.asset("assets/images/$image.png"),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(9.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        const Icon(
-                          Icons.location_on,
-                          color: Color(0xFF636882),
-                        ),
-                        Text(
-                          location,
-                          style: TextStyle(
-                              color: Colors.blue,
-                              fontFamily: GoogleFonts.poppins().fontFamily,
-                              fontWeight: FontWeight.w400),
-                        )
-                      ],
-                    ),
-                    Text(
-                      title,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontFamily: GoogleFonts.poppins().fontFamily,
-                      ),
-                    ),
-                    Text(
-                      subtitle,
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontFamily: GoogleFonts.poppins().fontFamily,
-                      ),
-                    )
-                  ],
+    return InkWell(
+      onTap: () {},
+      child: SizedBox(
+        height: height * 0.121,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 5, bottom: 5, right: 5),
+                  child: Image.asset("assets/images/$image.png"),
                 ),
-              ),
-            ],
-          ),
-          Row(
-            children: [
-              const Icon(
-                Icons.star_rate_rounded,
-                color: Color(0xFFFFA235),
-              ),
-              Text(star)
-            ],
-          )
-        ],
+                Padding(
+                  padding: const EdgeInsets.all(9.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.location_on,
+                            color: Color(0xFF636882),
+                          ),
+                          Text(
+                            location,
+                            style: TextStyle(
+                                color: Colors.blue,
+                                fontFamily: GoogleFonts.poppins().fontFamily,
+                                fontWeight: FontWeight.w400),
+                          )
+                        ],
+                      ),
+                      Text(
+                        title,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontFamily: GoogleFonts.poppins().fontFamily,
+                        ),
+                      ),
+                      Text(
+                        subtitle,
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontFamily: GoogleFonts.poppins().fontFamily,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                const Icon(
+                  Icons.star_rate_rounded,
+                  color: Color(0xFFFFA235),
+                ),
+                Text(star)
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
