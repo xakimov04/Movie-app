@@ -77,7 +77,7 @@ class _SavePageState extends State<SavePage> {
   Widget _buildEmptyState() {
     return Center(
       child: Text(
-        "Ma'lumot topilmadi",
+        "No information found",
         style: TextStyle(
           fontSize: 20,
           fontFamily: GoogleFonts.poppins().fontFamily,
@@ -102,6 +102,7 @@ class _SavePageState extends State<SavePage> {
         background: Container(
           color: Colors.red,
           alignment: Alignment.centerRight,
+          padding: EdgeInsets.only(right: 20.0),
           child: const Icon(
             Icons.delete,
             color: Colors.white,
